@@ -1,0 +1,362 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.body {
+  height: 100vh;
+  margin: 0;
+  font-family: "Sora", sans-serif;
+  /* Apply Sora font */
+  background: linear-gradient(
+    117.68deg,
+    #ffffff 3.4%,
+    #dbe4ee 35.87%,
+    #abc2dd 48.8%,
+    #86a1cd 65.25%,
+    #0059c3 94.43%
+  );
+  background-size: cover;
+  /* Ensures the background image covers the entire body */
+  background-attachment: fixed;
+}
+
+.navbar {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: transparent;
+  gap: 40px;
+  margin-right: 50px;
+}
+
+.logo img {
+  height: 40px;
+  margin-left: 50px;
+  /* Adjust the logo size as needed */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  /* Pushes the nav links to the right */
+  gap: 40px;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.auth-buttons .login-btn,
+.auth-buttons .signup-btn {
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 120px;
+  font-size: 14px;
+  font-family: "Sora", sans-serif;
+  /* Apply Sora font */
+}
+
+.auth-buttons .login-btn {
+  background-color: blue;
+  color: white;
+  border: 2px solid blue;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.auth-buttons .signup-btn {
+  background-color: white;
+  color: blue;
+  border: 2px solid white;
+  font-size: 16px;
+  font-weight: 300;
+  transition: 0.5s;
+}
+
+.auth-buttons .login-btn:hover {
+  opacity: 60%;
+}
+
+.auth-buttons .signup-btn:hover {
+  opacity: 60%;
+}
+
+/* Hero Section Styles */
+.hero {
+  display: flex;
+  height: 85vh;
+  background-color: transparent;
+  /* Background color for the hero section */
+}
+
+.hero-left,
+.hero-right {
+  flex: 1;
+  display: flex;
+  align-items: left;
+  margin-top: 70px;
+}
+
+.hero-left {
+  flex-basis: 60%;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.hero-left h1 {
+  font-size: 4rem;
+  margin: 0;
+  font-weight: 700;
+  margin-left: 50px;
+}
+
+.hero-left p {
+  font-size: 1.25rem;
+  margin: 10px 0;
+  font-weight: 400;
+  margin-left: 50px;
+}
+
+.cta-btn {
+  background-color: transparent;
+  color: black;
+  border: 2px solid black;
+  font-size: 16px;
+  font-weight: 500;
+  width: 140px;
+  padding: 10px;
+  font-family: "Sora", sans-serif;
+  /* Apply Sora font */
+  margin-left: 50px;
+  transition: 0.5s;
+}
+
+.cta-btn:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  font-size: 16px;
+  font-weight: 300;
+}
+.watch {
+  position: absolute;
+  background: linear-gradient(to right, #ffffff, #ffffff40);
+  display: flex;
+  height: 180px;
+  width: 1100px;
+  margin-left: 70px;
+  margin-right: 260px;
+  margin-top: 100px;
+  top: 460px;
+}
+.watch img {
+  position: absolute;
+  bottom: 0px;
+  left: 400px;
+}
+.watch h2 {
+  padding-left: 30px;
+}
+.hero-right {
+  flex-basis: 40%;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-right img {
+  height: 576px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-left,
+  .hero-right {
+    flex-basis: 100%;
+    padding: 10px;
+  }
+
+  .hero-left {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-left h1 {
+    font-size: 3rem;
+    margin-left: 0;
+  }
+
+  .hero-left p,
+  .cta-btn {
+    margin-left: 0;
+  }
+
+  .hero-right img {
+    height: 400px;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  /* Adjust navigation for tablets */
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .hero-left h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-left p {
+    font-size: 1rem;
+  }
+
+  .cta-btn {
+    font-size: 14px;
+    width: 120px;
+  }
+
+  .hero-right img {
+    height: 300px;
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Adjust layout for mobile devices */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo img {
+    margin-left: 0;
+    height: 35px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .auth-buttons {
+    margin-top: 10px;
+    gap: 10px;
+  }
+
+  .hero {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .hero-left h1 {
+    font-size: 2rem;
+  }
+
+  .hero-left p {
+    font-size: 0.9rem;
+  }
+
+  .cta-btn {
+    width: 100px;
+    font-size: 12px;
+  }
+
+  .hero-right img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Further adjustments for very small screens */
+  .navbar {
+    padding: 10px 10px;
+  }
+
+  .hero-left h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero-left p {
+    font-size: 0.8rem;
+  }
+
+  .cta-btn {
+    width: 90px;
+    font-size: 11px;
+    padding: 8px;
+  }
+
+  .hero-right img {
+    height: 200px;
+  }
+}
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4; /* Optional: Set a background color */
+}
+
+.loading-gif {
+  width: 500px; /* Adjust the size of the GIF */
+  height: 500px;
+}
+
+.loader {
+  width: 30px;
+  aspect-ratio: 2;
+  --_g: no-repeat radial-gradient(circle closest-side, #ffffff 90%, #0000);
+  background: var(--_g) 0% 50%, var(--_g) 50% 50%, var(--_g) 100% 50%;
+  background-size: calc(100% / 3) 50%;
+  animation: l3 1s infinite linear;
+}
+@keyframes l3 {
+  20% {
+    background-position: 0% 0%, 50% 50%, 100% 50%;
+  }
+  40% {
+    background-position: 0% 100%, 50% 0%, 100% 50%;
+  }
+  60% {
+    background-position: 0% 50%, 50% 100%, 100% 0%;
+  }
+  80% {
+    background-position: 0% 50%, 50% 50%, 100% 100%;
+  }
+}

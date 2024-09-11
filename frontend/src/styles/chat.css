@@ -1,0 +1,123 @@
+.Chat {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chatArea {
+  width: 100%;
+  height: 100%;
+}
+.chatScroll {
+  height: 68vh;
+  /* background-color: aqua; */
+  margin-left: 5%;
+  width: 90%;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  overflow-y: scroll;
+}
+.inputField {
+  width: 80%;
+  height: 7%;
+  margin-left: 10%;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.inputField img {
+  cursor: pointer;
+  height: 50px;
+  width: auto;
+}
+.inputField input {
+  width: 80%;
+  padding: 0px 20px;
+  font-size: 20px;
+  height: 80%;
+  border-radius: 10px;
+}
+
+.botChat,
+.userChat {
+  margin: 40px 10%;
+  /*  background-color: rgb(80, 80, 9); */
+  display: flex;
+  align-items: center;
+  img {
+    border-radius: 50%;
+    height: 60px;
+    width: auto;
+  }
+  div {
+    margin-left: 30px;
+    p {
+      margin: 0;
+      font-size: 18px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 20px;
+      padding: 0;
+    }
+  }
+}
+.loading {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  width: 200px;
+  margin-top: -30px;
+  padding: 0 200px;
+  span {
+    display: inline-block;
+    margin: 0 0.05em;
+  }
+}
+
+.loading04 {
+  span {
+    animation: loading04 0.7s infinite;
+    &:nth-child(1) {
+      animation-delay: 0s;
+    }
+    &:nth-child(2) {
+      animation-delay: 0.1s;
+    }
+    &:nth-child(3) {
+      animation-delay: 0.2s;
+    }
+    &:nth-child(4) {
+      animation-delay: 0.3s;
+    }
+  }
+}
+
+@keyframes loading04 {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+}
+
+.chatScroll::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(111, 157, 255, 0.3);
+  background-color: #f5f5f5;
+}
+
+.chatScroll::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+}
+
+.chatScroll::-webkit-scrollbar-thumb {
+  background-color: #29b6f6;
+  border: 2px solid #62cdff;
+}

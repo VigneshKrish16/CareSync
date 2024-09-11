@@ -1,0 +1,76 @@
+/* h1 {
+  color: #007bff;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+} */
+
+.my-container {
+  overflow-y: scroll;
+}
+.card {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 2rem;
+  overflow: hidden;
+}
+
+.card-header {
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  color: white;
+  font-weight: bold;
+  padding: 1rem;
+  font-size: 1.25rem;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.list-group-item {
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.list-group-item:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+.list-group-item strong {
+  color: #007bff;
+}
+
+ul {
+  padding-left: 1.5rem;
+  margin-bottom: 0;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.text-danger {
+  margin-top: 1rem;
+  color: #dc3545;
+}
+
+@media (max-width: 576px) {
+  .col-sm-2 {
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,143 @@
+.container1 {
+  margin: 35px 300px;
+  background: white;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  background: #e0e0e0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.line {
+  width: 100px;
+  height: 5px;
+  background: #e0e0e0;
+}
+
+.active {
+  background: #007bff;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+}
+
+.form-group {
+  text-align: left;
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  resize: none;
+}
+
+.next-button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.upload-button-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: flex-start;
+}
+
+.upload-label {
+  margin-right: 10px;
+}
+
+#checkupReport {
+  display: none;
+}
+
+.upload-button {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  background-color: #fff;
+  border: 2px solid;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.upload-button:hover {
+  background-color: #b6b8ba;
+  color: #fff;
+}
+
+.next-button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.next-button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.next-button:hover {
+  background-color: #0056b3;
+}

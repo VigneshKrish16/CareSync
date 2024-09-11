@@ -1,0 +1,196 @@
+/* Main Container */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f0f4f8;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+/* Top Section: Active Insurance and Claims */
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 30px;
+  height: 30vh;
+}
+
+.active-insurance {
+  flex-basis: 35%; /* Set to 35% */
+}
+
+.claims {
+  flex-basis: 65%; /* Set to 65% */
+}
+
+.box {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 15px;
+  height: 90%;
+}
+
+/* Bottom Section: Health Profile and Tip */
+.bottom-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  height: 45vh;
+}
+
+.left-bottom {
+  flex-basis: 60%; /* Set left to 60% */
+  height: 100%;
+}
+
+.right-bottom {
+  flex-basis: 40%; /* Set right to 40% */
+  height: 100%;
+}
+
+.box h3 {
+  font-size: 18px;
+  color: #1f3d61;
+  font-weight: 600;
+}
+
+.box p {
+  font-size: 13px;
+  color: #67748e;
+}
+
+.highlight-number {
+  font-size: 24px;
+  color: #1f73b7;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.view-link1 {
+  font-size: 13px;
+  color: #1a73e8;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.view-link2 {
+  cursor: pointer;
+  font-size: 13px;
+  color: #1a73e8;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.view-link1 i {
+  border: solid #1a73e8;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  margin-left: 5px;
+}
+
+.view-link2 i {
+  border: solid #1a73e8;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  margin-left: 5px;
+}
+
+/* Claims Specific Styles */
+.claim-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -30px;
+  padding-top: 10px;
+  border-top: 1px solid #e0e6ed;
+}
+
+.claim-box {
+  text-align: center;
+  flex: 1;
+}
+
+.claim-box h4 {
+  font-size: 13px;
+  font-weight: 500;
+  color: #1f3d61;
+  margin-top: 0px;
+}
+
+.claim-box p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1f73b7;
+  margin-top: 0px;
+}
+
+.bottom-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  flex: 1;
+}
+
+.bottom-box h3 {
+  font-size: 18px;
+  color: #1f3d61;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.bottom-box p {
+  font-size: 13px;
+  color: #67748e;
+  margin-bottom: 10px;
+}
+
+.status-indicator {
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.status-color-o {
+  background-color: #00c853;
+}
+.status-color-m {
+  background-color: #ff9900;
+}
+.status-color-n {
+  background-color: #ff0000;
+}
+
+.hospital-visit {
+  font-size: 12px;
+  color: #67748e;
+  margin-top: 10px;
+}
+
+.tip-content {
+  font-size: 13px;
+  color: #67748e;
+  line-height: 1.5;
+}
+
+.expires-text {
+  margin-top: -30px;
+}
