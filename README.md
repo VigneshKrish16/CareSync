@@ -10,7 +10,7 @@ Care Sync is an AI-driven platform revolutionizing insurance services with perso
 - [Getting Started](#getting-started)
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
-- 
+  
 ## Project Overview
 
 Care Sync leverages real-time data, a user-friendly chat assistant, and secure prescription storage to streamline the insurance experience. Our platform ensures users have tailored coverage and quick, accurate claim settlements.
